@@ -1,14 +1,15 @@
 import React from "react"
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
 import ObjectDetection from "./ObjectDetection"
+import SpeechCommandRecognition from "./SpeechCommandRecognition"
 
 const App = () => {
   return (
     <Router>
       <div>
         <Switch>
-          <Route path="/about">
-            <h1>About</h1>
+          <Route path="/speechCommandRecognition">
+            <SpeechCommandRecognition />
           </Route>
           <Router path="/objectDetection">
             <ObjectDetection />
@@ -17,7 +18,7 @@ const App = () => {
             <nav>
               <ul>
                 <li>
-                  <Link to="/about">About</Link>
+                  <Link to="/speechCommandRecognition">Speech Command Recognition</Link>
                 </li>
                 <li>
                   <Link to="/objectDetection">Object Detections</Link>
